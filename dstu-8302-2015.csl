@@ -18,7 +18,6 @@
   </info>
   <locale>
     <terms>
-      <term name="et-al-none"/>
       <term name="editor">ред. </term>
       <term name="et-al"> та ін.</term>
       <term name="page" form="short">
@@ -59,14 +58,14 @@
   </macro>
   <macro name="translator">
     <names variable="translator">
-      <label variable="translator" form="short"/>
+      <label form="short"/>
       <name name-as-sort-order="all" sort-separator=" " initialize-with=". " et-al-min="5" et-al-use-first="3"/>
       <et-al term="et-al"/>
     </names>
   </macro>
   <macro name="editor">
     <names variable="editor">
-      <label variable="editor" form="short"/>
+      <label form="short"/>
       <name name-as-sort-order="all" sort-separator=" " initialize-with=". " et-al-min="5" et-al-use-first="3" delimiter-precedes-last="never"/>
       <et-al term="et-al"/>
     </names>
@@ -231,7 +230,6 @@
           </date>
         </else-if>
         <else-if type="legislation">
-          <text macro="author-first" suffix=" "/>
           <group delimiter=". — ">
             <group delimiter=" : ">
               <text macro="section-title"/>
@@ -256,7 +254,6 @@
 		  <group delimiter=". ">
             <text macro="section-title"/>
             <text variable="container-title" font-style="italic"/>
-            <text macro="locators"/>
             <text macro="access"/>
 		  </group>
         </else-if>
