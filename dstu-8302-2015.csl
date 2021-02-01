@@ -120,7 +120,7 @@
         <choose>
           <if variable="URL">
             <group delimiter=" ">
-              <text variable="URL"/>
+              <text variable="URL" prefix="URL: "/>
               <group delimiter=" " prefix="(" suffix=")">
                 <text term="accessed"/>
                 <date variable="accessed">
@@ -257,7 +257,6 @@
             <text macro="section-title"/>
             <text variable="container-title" font-style="italic"/>
             <text macro="locators"/>
-            <text macro="publisher"/>
             <text macro="access"/>
 		  </group>
         </else-if>
