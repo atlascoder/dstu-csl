@@ -121,10 +121,10 @@
             <group delimiter=" ">
               <text variable="URL" prefix="URL: "/>
               <group delimiter=" " prefix="(" suffix=")">
-                <text term="accessed"/>
+                <text term="accessed" suffix=": "/>
                 <date variable="accessed">
-                  <date-part name="month" form="short" strip-periods="false"/>
-                  <date-part name="day" form="numeric-leading-zeros" prefix=" " suffix=", "/>
+                  <date-part name="day" form="numeric-leading-zeros" prefix=" " suffix="."/>
+                  <date-part name="month" form="numeric-leading-zeros" suffix="."/>
                   <date-part name="year" form="long"/>
                 </date>
               </group>
